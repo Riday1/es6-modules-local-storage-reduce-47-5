@@ -1,5 +1,5 @@
 import React from 'react';
-import { addToDb, removeFromDb } from '../FakeDB/FakeDB';
+import { addToDb, deleteCartFromDb, removeFromDb } from '../FakeDB/FakeDB';
 
 const Cosmetic = (props) => {
     const { id, name, price } = props.cosmetic;
@@ -10,6 +10,7 @@ const Cosmetic = (props) => {
         removeFromDb(id);
     }
     const deleteCart = () => {
+        
         deleteCartFromDb();
     }
     return (

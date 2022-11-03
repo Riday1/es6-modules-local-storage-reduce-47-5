@@ -28,5 +28,8 @@ const removeFromDb = (id) => {
         localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
     }
 }
+const deleteCartFromDb = () => {
+    localStorage.removeItem('shopping-cart')
 
-export { addToDb, removeFromDb }
+}
+export { addToDb, removeFromDb, deleteCartFromDb }
